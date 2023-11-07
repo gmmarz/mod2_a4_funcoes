@@ -5,7 +5,7 @@
 
 def calcular_IMC(peso:float|int, altura:float|int)->float:
     imc = round(peso/altura**2,2)
-    print(f'Seu IMC é: {imc}')
+    return imc
 
 
 print('Programa para calcular o IMC')
@@ -13,7 +13,9 @@ print('Programa para calcular o IMC')
 peso = float(input('Digite seu peso: '))
 altura = float(input('Digite sua altura: '))
 
-calcular_IMC(peso,altura)
+result_imc = calcular_IMC(peso,altura)
+
+print(f'O seu IMC = {result_imc}')
 
 
 
