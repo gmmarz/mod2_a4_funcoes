@@ -33,7 +33,7 @@ def dividir(param1:int|float,param2:int|float):
     if param2 == 0:
         resultado = 'Não é possível divisão por 0'
     else:
-        resultado = param1/param2
+        resultado = round(param1/param2,2)
     return resultado
 
 print('Programa para calcular dois numeros')
